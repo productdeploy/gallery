@@ -1,0 +1,11 @@
+name: txt2vid
+parameters:
+  model: damo-vilab/text-to-video-ms-1.7b
+backend: diffusers
+step: 25
+# Force CPU usage
+f16: true
+cuda: false
+diffusers:
+  pipeline_type: VideoDiffusionPipeline
+  cuda: false
